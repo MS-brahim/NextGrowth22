@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+        <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+        /> -->
+
+        <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+        <!-- https://cdnjs.com/libraries/font-awesome -->
+        <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        /> -->
+        <link rel="stylesheet" href="./style.css">
+
+        <title>Next Growth</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Date de création</th>
+                        <th scope="col">Etat</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prénom</th>
+                        <th scope="col">Nom d'utilisateur</th>
+                        <th scope="col">Matricule</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="u_table">
+                    
+                </tbody>
+            </table>
+
+            <div class="w-100 text-end">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="open-modal" data-open="userModal">
+                    Enregistrer
+                </button>
+            </div>
+            
+        </div>
+
+        <!-- <div class="btn-group">
+            <button type="button" class="open-modal" data-open="userModal">
+              Launch first modal
+            </button>
+          </div> -->
+          
+        <div class="modal" id="userModal">
+            <div class="modal-dialog">
+                <header class="modal-header">
+                    The header of the first modal
+                    <button class="close-modal" aria-label="close modal" data-close>
+                        ✕  
+                    </button>
+                </header>
+                <section class="modal-content">
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="firstName" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="firstName">
+                            <div id="fnmaeHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="lastName" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="lastName">
+                            <div id="lastNameHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="status" class="form-label">Etat</label>
+                            <input type="text" class="form-control" id="status">
+                            <div id="statuslHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="username" class="form-label">Nomd'utilisateur</label>
+                            <input type="text" class="form-control" id="username">
+                            <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 col-md-4">
+                            <label for="createdDate" class="form-label">Date créationa</label>
+                            <input type="text" class="form-control" id="createdDate">
+                            <div id="createdDateHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="registrationNumber" class="form-label">Matricule</label>
+                            <input type="text" class="form-control" id="registrationNumber">
+                            <div id="registrationNumberHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-footer">
+                    <button onclick="add_user();" type="submit" class="btn btn-primary">Save</button>
+                </footer>
+            </div>
+        </div>
+        <!-- script  -->
+        <script src="./script.js"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script> -->
+    </body>
+</html>

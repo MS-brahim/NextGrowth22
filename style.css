@@ -1,0 +1,111 @@
+.valide {
+    background-color: #5BE881 !important;
+}
+.rejected {
+    background-color: #FF0000 !important;
+}
+  .on-validation {
+    background-color: #FDB64D !important;
+}
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font: 16px/1.5 sans-serif;
+    margin: 80px;
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: inherit;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+.open-modal {
+    font-weight: bold;
+    background: blue;
+    color: white;
+    padding: 0.75rem 1.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    
+}
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(94, 94, 94);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0.2;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: gray;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
